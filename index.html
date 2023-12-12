@@ -18,6 +18,7 @@
                 <input v-model="text_campo" placeholder="Aggiungi una nuova task" @keyup.enter="addTask">
                 <button @click="addTask">Aggiungi</button>
                 <li v-for="text in todos" :key="text">
+                    <!-- BONUS 2 -->
                     <span :class=" text.done === true ?'noChecked':''" @click="text.done = !text.done">{{text.text}}</span>
                     <!-- MILESTONE 2 -->
                     <i class="fa-solid fa-xmark" @click="DeleteTask(text)"></i>

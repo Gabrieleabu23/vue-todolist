@@ -26,7 +26,7 @@ createApp({
         },
         // MILESTONE 3 ADD FROM INPUT A NEW TASK
         addTask(){
-            this.todos.unshift({ text: this.text_campo});
+            this.todos.unshift({ text: this.text_campo, done: false});
             this.text_campo='';
         }
     }
