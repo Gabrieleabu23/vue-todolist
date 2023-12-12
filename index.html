@@ -14,6 +14,7 @@
             <h2>LISTA DI COSE DA FARE</h2>
             <!-- MILESTONE 1 -->
             <ul>
+                <!-- BONUS 1 ADD KEYPUP.enter  -->
                 <input v-model="text_campo" placeholder="Aggiungi una nuova task" @keyup.enter="addTask">
                 <button @click="addTask">Aggiungi</button>
                 <li v-for="text in todos" :key="text">

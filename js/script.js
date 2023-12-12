@@ -24,8 +24,10 @@ createApp({
         DeleteTask(indice){
             this.todos.splice(indice, 1);
         },
+        // MILESTONE 3 ADD FROM INPUT A NEW TASK
         addTask(){
             this.todos.unshift({ text: this.text_campo});
+            this.text_campo='';
         }
     }
 }).mount('#app');
