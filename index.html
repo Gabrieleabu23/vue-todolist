@@ -14,8 +14,11 @@
             <h2>LISTA DI COSE DA FARE</h2>
             <!-- MILESTONE 1 -->
             <ul>
+                <input v-model="text_campo" placeholder="Aggiungi una nuova task">
+                <button @click="addTask">Aggiungi</button>
                 <li v-for="text in todos" :key="text">
                     <span :class=" text.done === true ?'noChecked':''">{{text.text}}</span>
+                    <!-- MILESTONE 2 -->
                     <i class="fa-solid fa-xmark" @click="DeleteTask(text)"></i>
                 </li>
             </ul>
