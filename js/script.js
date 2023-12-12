@@ -17,5 +17,10 @@ createApp({
                 }
             ]
         }
+    },
+    methods:{
+        DeleteTask(indice){
+            this.todos.splice(indice, 1);
+        }
     }
 }).mount('#app');
